@@ -22,7 +22,6 @@ class UserSeeder extends Seeder
             'username' => $username,
             'password' => bcrypt($password),
             'name' => $name,
-            'group_id' => 1,
         ]);
     }
 }
