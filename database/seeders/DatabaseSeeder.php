@@ -14,6 +14,12 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        //
+        DB::beginTransaction();
+
+        $this->call([
+            UserSeeder::class,
+        ]);
+
+        DB::commit();
     }
 }
