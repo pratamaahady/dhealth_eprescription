@@ -22,7 +22,7 @@ SET FOREIGN_KEY_CHECKS = 0;
 -- ----------------------------
 DROP TABLE IF EXISTS `obatalkes_m`;
 CREATE TABLE `obatalkes_m`  (
-  `obatalkes_id` int(11) NOT NULL AUTO_INCREMENT,
+  `obatalkes_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT,
   `obatalkes_kode` varchar(100) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
   `obatalkes_nama` varchar(250) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
   `stok` decimal(15, 2) NULL DEFAULT NULL,

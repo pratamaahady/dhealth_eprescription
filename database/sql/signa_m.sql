@@ -22,7 +22,7 @@ SET FOREIGN_KEY_CHECKS = 0;
 -- ----------------------------
 DROP TABLE IF EXISTS `signa_m`;
 CREATE TABLE `signa_m`  (
-  `signa_id` int(11) NOT NULL AUTO_INCREMENT,
+  `signa_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT,
   `signa_kode` varchar(100) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
   `signa_nama` varchar(250) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
   `additional_data` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL,
