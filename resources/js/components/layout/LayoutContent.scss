@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback');
+@import url('https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
+@import '@/assets/plugins/fontawesome-free/css/all.min.css';
+@import 'overlayscrollbars/css/OverlayScrollbars.min.css';
+@import '@/assets/css/adminlte.min.css';
+
+.nav-item{
+    .nav-link{
+        font-size: 14px;
+        .nav-icon{
+            font-size: 12px !important;
+        }
+        &.active{
+            background-color: rgba(255,255,255,.3) !important;
+            color: white !important;
+        }
+    }
+}

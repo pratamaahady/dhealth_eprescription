@@ -36,7 +36,6 @@ class UserRequest extends FormRequest
                     return empty($id); // required if create request
                 })
             ],
-            'group_id' => 'required|integer|exists:App\Models\Group,id',
         ];
     }
 }

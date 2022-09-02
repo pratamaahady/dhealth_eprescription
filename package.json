@@ -12,7 +12,7 @@
     "devDependencies": {
         "@popperjs/core": "^2.10.2",
         "axios": "^0.21",
-        "bootstrap": "^5.1.3",
+        "bootstrap": "^4.3.2",
         "laravel-mix": "^6.0.6",
         "lodash": "^4.17.19",
         "postcss": "^8.1.14",
@@ -20,7 +20,19 @@
         "sass": "^1.32.11",
         "sass-loader": "^11.0.1",
         "vue": "^2.6.12",
-        "vue-loader": "^15.10.0",
-        "vue-template-compiler": "^2.6.12"
+        "vue-loader": "^15.9.8",
+        "vue-router": "^3.5.3",
+        "vue-template-compiler": "^2.6.12",
+        "vuex": "^3.6.2"
+    },
+    "dependencies": {
+        "@mathieustan/vue-datepicker": "^0.2.11",
+        "jquery": "^3.6.0",
+        "moment": "^2.29.4",
+        "overlayscrollbars": "^1.13.2",
+        "sweetalert2": "^11.4.22",
+        "toastr": "^2.1.4",
+        "vue-color": "^2.8.1",
+        "vue-select": "^3.18.3"
     }
 }

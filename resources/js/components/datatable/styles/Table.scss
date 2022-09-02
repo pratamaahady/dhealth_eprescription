@@ -1,0 +1,202 @@
+$thTextColor: white;
+
+@media(min-width: 768px ){
+    .w-md-auto{
+        width: auto !important;
+    }
+}
+
+.table-wrapper{
+
+    .table-title{
+        font-weight: bold;
+    }
+
+    &.card{
+        &.h-100{
+            height: 100% !important;
+        }
+
+        .card-footer{
+            background: none !important;
+        }
+    }
+
+    &.card-disabled{
+        background: none !important;
+        box-shadow: none !important;
+
+        .card-header{
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+
+        .card-body{
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+
+        .card-footer{
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+
+        .table{
+            thead tr th:first-child,
+            tbody tr td:first-child{
+                padding-left: 0;
+            }
+        }
+    }
+
+    .table{
+        margin-bottom: 0;
+
+        thead{
+            tr{
+                vertical-align: middle;
+
+                th{
+                    font-size: 13px;
+                    color: rgba($color: #000, $alpha: .7);
+
+                    .clickable{
+                        &:hover{
+                            color: rgba($color: #000, $alpha: 1.0) !important;
+                        }
+                    }
+
+                    &.checkboxCol{
+                        padding-left: 20px;
+                        vertical-align: middle;
+                        text-align: center;
+                    }
+                }
+
+                &.header-colored{
+                    background-color: var(--secondary);
+
+                    th{
+                        color: rgba($color: #fff, $alpha: .8) !important;
+                        padding: 15px 30px !important;
+
+                        .clickable{
+                            &:hover{
+                                color: rgba($color: #fff, $alpha: 1.0) !important;
+                            }
+                        }
+                    }
+
+                    .sort-icon{
+                        width: 13px;
+                        color: rgba($color: #fff, $alpha: .5);
+                        &.sort-active{
+                            color: rgba($color: #fff, $alpha: 1.0);
+                        }
+                    }
+                }
+            }
+        }
+        tbody{
+            position: relative;
+            tr{
+                td{
+                    vertical-align: middle;
+                    font-size: 0.875rem;
+
+                    // & > *{
+                    //     text-overflow: ellipsis;
+                    //     max-width: 200px;
+                    //     overflow: hidden;
+                    //     display: block;
+                    // }
+
+                    &.checkboxCol{
+                        padding-left: 20px;
+                        vertical-align: middle;
+                        text-align: center;
+                    }
+
+                    a{
+                        color: var(--primary);
+                        position: relative;
+
+                        &::after{
+                            content: '';
+                            position: absolute;
+                            left: 0;
+                            bottom: -2px;
+                            width: 100%;
+                            border-bottom: 1px solid ;
+                        }
+                    }
+
+                    &.w100px{
+                        width: 100px;
+                    }
+                }
+            }
+        }
+
+        &.table-hover-custom{
+            tbody{
+                tr:hover, tr:active, tr:focus{
+                    background-color: rgba($color: #000, $alpha: 0.08) !important;
+                }
+            }
+        }
+
+        &.table-border{
+            tbody{
+                tr{
+                    td{
+                        border:1px solid #dee2e6;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .table-action{
+        button{
+            padding: 5px 10px;
+        }
+    }
+
+    .table-loading{
+        position: absolute;
+        width: 100%;
+        top:0%;
+        height: 100%;
+        background-color: rgba(0,0,0,.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .clickable{
+        cursor: pointer;
+
+        &:hover{
+            color:var(--primary);
+        }
+    }
+
+    .sort-icon{
+        width: 13px;
+        color: rgba($color: #000, $alpha: .5);
+        &.sort-active{
+            color: rgba($color: #000, $alpha: 1.0);
+        }
+    }
+}
+
+.cell-fit-content{
+    width: 1%;
+    white-space: nowrap;
+}
+
+.text-bold{
+    font-weight: bold;
+}

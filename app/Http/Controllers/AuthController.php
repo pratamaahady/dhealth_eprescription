@@ -29,4 +29,8 @@ class AuthController extends Controller
         $request->user()->currentAccessToken()->delete();
         return response()->success('Berhasil logout.')->setStatusCode(204);
     }
+
+    public function verify_token(Request $request){
+        return response(['verified' => true]);
+    }
 }

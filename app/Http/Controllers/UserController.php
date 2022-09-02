@@ -10,7 +10,7 @@ use Illuminate\Http\Request;
 class UserController extends Controller
 {
     public function index(Request $request){
-        $users = User::get();
+        $users = User::getOrDatatable($request);
         return UserResource::collection($users);
     }
 

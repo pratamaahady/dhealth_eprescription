@@ -57,6 +57,12 @@ Aplikasi sederhana yg memungkinkan user untuk dapat melakukan pencatatan pemberi
     php artisan artisan serve
     ````
 
+## Login Account
+````
+Username: admin
+Password: password
+````
+
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).

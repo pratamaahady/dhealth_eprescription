@@ -4,7 +4,7 @@
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
         <meta http-equiv='x-ua-compatible' content='ie=edge'>
 
-        <link rel="shortcut icon" type="image/png" href="{{ public_path('favicon.png') }}" />
+        <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
         <link href="{{ mix('css/app.css') }}" type="text/css" rel="stylesheet" />
         <script src="{{ mix('js/app.js') }}" type="text/javascript" defer></script>
     </head>
